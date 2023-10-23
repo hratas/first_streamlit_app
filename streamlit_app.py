@@ -25,8 +25,8 @@ streamlit.dataframe(fruits_to_show)
 # FruityVice API response
 streamlit.header('Fruityvice Fruit Advice')
 
-fruitivice_response = requests.get('https://fruityvice.com/api/fruit/watermelon')
-streamlit.text(fruitivice_response.json())
+fruityvice_response = requests.get('https://fruityvice.com/api/fruit/watermelon')
+streamlit.text(fruityvice_response.json())
 
 # Implement better visual solution
 frutyvice_normalized = pd.json_normalize(fruityvice_response.json())
